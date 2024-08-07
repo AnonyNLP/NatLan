@@ -1,4 +1,4 @@
-# 🤖Native Language Prompting Facilitates Knowledge Elicitation in Multilingual Large Language Models💡
+# 🤖Unlocking the Non-Native Language Context Limitation: Native Language Prompting Facilitates Knowledge Elicitation💡
 
 📢This repository is maintained for the complete set of code for ***Nat**ive **Lan**guage Prompting (**NatLan**)*.
 
