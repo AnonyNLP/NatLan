@@ -18,8 +18,8 @@ def main():
 
     # -----------------------------------------------------------
     model_pth = '<SPEAKER-PATH>'
-    translate_model_pth = '<TRANSLATOR-PATH>'
-    model_name = '<SPEAKER-NAME>' + '<TRANSLATOR-NAME>'
+    transfer_model_pth = '<TRANSFEROR-PATH>'
+    model_name = '<SPEAKER-NAME>' + '<TRANSFEROR-NAME>'
     google_api_key = '<GOOGLE-API-KEY>'
 
     data_type = 'C-Eval'
@@ -57,7 +57,7 @@ def main():
         "top_p": None,
     }
     if use_natlan:
-        natlan = NatLan(translate_model_pth=translate_model_pth, device=device, translated_prompts=translated_prompts, target_lang=target_lang, native_lang=native_lang)
+        natlan = NatLan(transfer_model_pth=transfer_model_pth, device=device, translated_prompts=translated_prompts, target_lang=target_lang, native_lang=native_lang)
     elif use_self:
         self_translate = Self_Translate(pipe=pipe, generation_args=generation_args, device=device, translated_prompts=translated_prompts, target_lang=target_lang, native_lang=native_lang)
 

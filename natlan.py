@@ -6,9 +6,9 @@ class NatLan:
     '''
     Native Language Prompting
     '''
-    def __init__(self, translate_model_pth, device, translated_prompts, target_lang, native_lang):
-        self.tokenizer = AutoTokenizer.from_pretrained(translate_model_pth, trust_remote_code=True)
-        self.model = AutoModelForCausalLM.from_pretrained(translate_model_pth, device_map="cuda", torch_dtype="auto", trust_remote_code=True)
+    def __init__(self, transfer_model_pth, device, translated_prompts, target_lang, native_lang):
+        self.tokenizer = AutoTokenizer.from_pretrained(transfer_model_pth, trust_remote_code=True)
+        self.model = AutoModelForCausalLM.from_pretrained(transfer_model_pth, device_map="cuda", torch_dtype="auto", trust_remote_code=True)
         self.native_lang = native_lang
         self.target_lang = target_lang
         self.translated_prompts = translated_prompts

@@ -8,21 +8,21 @@
 
 Run `main.py` to execute NatLan and related methods, with the following parameter configuration:
 
-| Parameter             | Explanation                                         |
-| --------------------- | --------------------------------------------------- |
-| `model_pth`           | Speaker LLMs path                                   |
-| `translate_model_pth` | Translator LLMs path (for NatLan)                   |
-| `model_name`          | result file identifier                              |
-| `data_pth`            | dataset path                                        |
-| `result_pth`          | result saving path                                  |
-| `prompts_pth`         | translation prompts (for NatLan & Self-Translation) |
-| `nshot`               | n-shot prompting                                    |
-| `use_natlan`          | whether to use NatLan                               |
-| `use_google`          | whether to use Google-MT                            |
-| `use_self`            | whether to use Self-Translation                     |
-| `target_lang`         | the original langauge of the questions              |
-| `native_lang`         | the native (dominant) language of Speaker LLMs      |
-| `google_api_key`      | google translate API (for Google-MT)                |
+| Parameter            | Explanation                                         |
+| -------------------- | --------------------------------------------------- |
+| `model_pth`          | Speaker LLMs path                                   |
+| `transfer_model_pth` | Transferor LLMs path (for NatLan)                   |
+| `model_name`         | result file identifier                              |
+| `data_pth`           | dataset path                                        |
+| `result_pth`         | result saving path                                  |
+| `prompts_pth`        | translation prompts (for NatLan & Self-Translation) |
+| `nshot`              | n-shot prompting                                    |
+| `use_natlan`         | whether to use NatLan                               |
+| `use_google`         | whether to use Google-MT                            |
+| `use_self`           | whether to use Self-Translation                     |
+| `target_lang`        | the original langauge of the questions              |
+| `native_lang`        | the native (dominant) language of Speaker LLMs      |
+| `google_api_key`     | google translate API (for Google-MT)                |
 
 P.S. Only one of the variables `use_natlan`, `use_google`, or `use_self` can be set to `True` at most. If all three are set to False, the default behavior is to have Speaker LLMs directly answer questions in the target language (`Original` in our paper).
 
