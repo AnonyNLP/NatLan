@@ -1,0 +1,7 @@
+transformers
+datasets
+numpy
+torch
+openai
+requests
+accelerate
