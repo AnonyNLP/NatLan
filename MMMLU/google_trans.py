@@ -10,7 +10,7 @@ import os
 import time
 
 
-def translate_text_api_key(text, source, api_key="AIzaSyATOSHLJ7ihPuCnbYptpUmpRGfVsvdh6T4", target="en"):
+def translate_text_api_key(text, source, api_key="<YOUR-GOOGLE-API-KEY>", target="en"):
     url = "https://translation.googleapis.com/language/translate/v2"
     params = {
         'q': text,
