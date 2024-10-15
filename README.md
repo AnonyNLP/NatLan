@@ -8,7 +8,7 @@
 
 The proposed NatLan method involves two types of prompts: **translate prompts** and **QA prompts**.
 
-1. **Trans. prompts**
+**1. Trans. prompts**
 
 ```markdown
 <System Prompts>
@@ -36,7 +36,7 @@ D. {translated example['choice D']}
 Answer:
 ```
 
-2) **QA prompts**
+**2. QA prompts**
 
 ```markdown
 <System Prompts>
@@ -66,7 +66,7 @@ The relevant code is contained within the `./MMMLU` directory.
 
 During our evaluation phase, to facilitate data reuse and enhance computational efficiency, we implemented a segmented computation and storage process for the translate-then-answer methods, divided into the following three steps:
 
-**1.Get Translation:**
+**1. Get Translation:**
 
 ```bash
 python self_trans.py
@@ -74,13 +74,13 @@ python google_trans.py
 python gpt_trans.py
 ```
 
-**2.Inference:**
+**2. Inference:**
 
 ```bash
-bash inference.py
+bash inference.sh
 ```
 
-**3.Evaluation and Further Analysis:**
+**3. Evaluation and Further Analysis:**
 
 ```
 python evaluate.py
